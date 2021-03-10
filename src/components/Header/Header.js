@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CategoryContext } from '../../App';
 
-const Header = (props) => {
-      const {count,setCount} = props 
-
+const Header = () => {
+      const [count,setCount] = useContext(CategoryContext);
       return (
             <div>
                   <h1><u>Child:</u> This is Header Component - Count {count}</h1>
