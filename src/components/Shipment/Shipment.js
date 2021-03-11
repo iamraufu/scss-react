@@ -6,7 +6,7 @@ const Shipment = () => {
       return (
             <div>
                   <h1><u>Child:</u> This is Shipment Component - Count {count}</h1>
-                  <button onClick={()=>setCount(count+1)}>Increase</button>
+                  <button onClick={()=>setCount(count+1)}>Increase from Category</button>
             </div>
       );
 };

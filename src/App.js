@@ -7,10 +7,10 @@ import React, { createContext, useState } from 'react';
 export const CategoryContext = createContext();
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [category, setCategory] = useState("");
   
   return (
-    <CategoryContext.Provider value={[count,setCount]}>
+    <CategoryContext.Provider value={[category,setCategory]}>
       <div className='main'>
         <Header/>
         <Home/>
